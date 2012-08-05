@@ -51,7 +51,8 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
 PRODUCT_COPY_FILES +=  \
-	vendor/cm/prebuilt/common/apps/Superuser.apk:system/app/Superuser.apk
+    vendor/cm/prebuilt/common/apps/Superuser.apk:system/app/Superuser.apk \
+    vendor/cm/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
