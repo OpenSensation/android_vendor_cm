@@ -15,9 +15,9 @@ include vendor/cm/config/cm_audio.mk
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=CyanTone.ogg \
-    ro.config.notification_sound=CyanMessage.ogg \
-    ro.config.alarm_alert=CyanAlarm.ogg
+    ro.config.ringtone=Girtab.ogg \
+    ro.config.notification_sound=Proxima.ogg \
+    ro.config.alarm_alert=Cesium.ogg
 
 # BT config
 PRODUCT_COPY_FILES += \
