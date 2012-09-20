@@ -96,7 +96,6 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/modelid_cfg.sh:system/bin/modelid_cfg.sh
 
 PRODUCT_COPY_FILES +=  \
-    vendor/cm/prebuilt/common/apps/Superuser.apk:system/app/Superuser.apk \
     vendor/cm/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/cm/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
 
@@ -127,7 +126,6 @@ PRODUCT_PACKAGES += \
     LatinIME \
     SpareParts \
     Superuser \
-    Superuser.apk \
     su
 
 # Optional CM packages
