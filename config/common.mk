@@ -119,6 +119,9 @@ PRODUCT_COPY_FILES += \
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
 
+# Inherit UpdateMe stuff
+$(call inherit-product-if-exists, vendor/updateme/common.mk)
+
 # Required CM packages
 PRODUCT_PACKAGES += \
     Camera \
