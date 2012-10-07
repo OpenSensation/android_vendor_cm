@@ -195,10 +195,7 @@ else
     CM_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)-$(CM_BUILD)$(CM_EXTRAVERSION)
 endif
 
-ifdef OS_RELEASE
-    CM_VERSION := OpenSensation$(OS_VERSION)-$(shell date +%Y%m%d)
-endif
-
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
-  ro.modversion=$(CM_VERSION)
+  ro.modversion=$(CM_VERSION) \
+  ro.os.version=OpenSensation$(OS_VERSION)-$(shell date +%Y%m%d)-$(CM_BUILD)
