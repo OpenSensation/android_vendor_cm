@@ -124,6 +124,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
+# Secure Fake Image for PDroid
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/media/PDroid.jpeg:system/media/PDroid.jpeg
+
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
 
