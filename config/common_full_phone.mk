@@ -23,8 +23,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
-
+ifneq ($(TARGET_PROVIDES_BOOTANIMATION),true)
 ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
     PRODUCT_COPY_FILES += \
         vendor/cm/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
+endif
 endif
