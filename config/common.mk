@@ -1,5 +1,6 @@
 PRODUCT_BRAND ?= cyanogenmod
 
+ifneq ($(TARGET_PROVIDES_BOOTANIMATION),true)
 # To deal with CM9 specifications
 # TODO: remove once all devices have been switched
 ifneq ($(TARGET_BOOTANIMATION_NAME),)
@@ -44,6 +45,7 @@ $(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size
 
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
+endif
 endif
 
 ifdef CM_NIGHTLY
