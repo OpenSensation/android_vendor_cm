@@ -228,7 +228,8 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_VERSION) \
-  ro.modversion=$(CM_VERSION)
+  ro.modversion=$(CM_VERSION) \
+  ro.os.version=OpenSensation2-$(shell date +%Y%m%d)-$(CM_BUILD)
 
 
 -include $(WORKSPACE)/hudson/image-auto-bits.mk
