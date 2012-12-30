@@ -1,0 +1,6 @@
+#!/system/bin/sh
+# enable IPv6-Privacy-Extensions per default for all interfaces
+
+sysctl -w net.ipv6.conf.default.use_tempaddr=2
+sysctl -w net.ipv6.conf.all.use_tempaddr=2
+

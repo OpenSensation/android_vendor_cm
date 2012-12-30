@@ -89,6 +89,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
+# IPv6 Privacy Extensions
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/init.d/10ipv6privacy:system/etc/init.d/10ipv6privacy
+
 # CM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
