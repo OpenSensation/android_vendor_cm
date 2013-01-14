@@ -185,6 +185,10 @@ PRODUCT_PACKAGES += \
     ssh-keygen \
     start-ssh
 
+# PDroidManager
+PRODUCT_PACKAGES += \
+    PDroidManager
+
 # rsync
 PRODUCT_PACKAGES += \
     rsync
