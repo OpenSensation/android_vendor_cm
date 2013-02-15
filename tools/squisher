@@ -33,7 +33,7 @@ fi
 # Determine what to name the new package
 MODVERSION=`sed -n -e'/ro\.os\.version/s/^.*=//p' $OUT/system/build.prop`
 echo -e $CL_CYN"MODVERSION: $MODVERSION"$CL_RST
-OUTFILE=$OUT/cm-$MODVERSION.zip
+OUTFILE=$OUT/$MODVERSION.zip
 
 ln -f $OTAPACKAGE $OUTFILE
 
